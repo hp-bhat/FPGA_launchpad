@@ -1,2 +1,13 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Never line-ending-mangle these
+*.bit    binary
+*.bin    binary
+*.mcs    binary
+*.elf    binary
+*.png    binary
+*.pdf    binary
+
+# Don't let GitHub call this repo a "Tcl project"
+*.tcl    linguist-language=Tcl
+scripts/* linguist-vendored
